@@ -1,12 +1,15 @@
-# пример работы рекурсии 1
-def fun_1(arr , index = 0 , summ_num = 0):
-    print(arr[index])
-    summ_num += arr[index]
-    if(len(arr) - 1 == index):
-        return summ_num
-    return fun_1(arr , index + 1 , summ_num)
 
-print(fun_1([1,2,3,4]))
+
+
+# пример работы рекурсии 1
+# def fun_1(arr , index = 0 , summ_num = 0):
+#     print(arr[index])
+#     summ_num += arr[index]
+#     if(len(arr) - 1 == index):
+#         return summ_num
+#     return fun_1(arr , index + 1 , summ_num)
+
+# print(fun_1([1,2,3,4]))
 
 
 
@@ -59,3 +62,18 @@ print(fun_2(["k1","k2","k3"], [1,2,3]))
 # доп задачи:
 # (внизу) https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-13-rekursivnye-funkcii-2023-01-23
 # https://w3resource.com/python-exercises/data-structures-and-algorithms/python-recursion.php
+
+
+
+# номер 1
+def fun_number_1(num , answer = 1):
+    answer *= num
+    num-=1
+    if(num == 1):
+        return answer
+    else:
+        return fun_number_1(num , answer)
+
+print(fun_number_1(7))
+
+
