@@ -39,11 +39,12 @@ dog = Animals("ggg")
 # наследуем класс Animals
 # в наследуемом классе можно создавать свои переменные и методы
 class Cats(Animals):
-    def __init__(self, name_cat):
+    def __init__(self, name_cat , num_s_cat):
         # вызываем метод родителя
         super().__init__(name_cat)
         print("eeff")
         self.num_cat = 80
+        self.num_s_cat = num_s_cat
         self.name = self.name + "0000"
 
     def may_may(self):
@@ -52,7 +53,7 @@ class Cats(Animals):
 
 
 
-i_cat = Cats("zxv")
+i_cat = Cats("zxv" , 3)
 i_cat.may_may()
 
 
@@ -70,3 +71,17 @@ i_cat.may_may()
 # наследуйте класс автомобили в котором есть ещё одна переменная количество мест
 
 # наследуйте класс вертолеты с дополнительным методом взлет 
+
+
+
+class All_big_class():
+    def __init__(self , nume , num):
+        self.cats = Cats(nume , num)
+        self.animals = Animals(nume)
+
+
+big_num = All_big_class("wwww" , 8)
+print(big_num.animals.name)
+big_num.cats.may_may()
+
+
