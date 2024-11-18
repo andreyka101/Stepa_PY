@@ -5,7 +5,6 @@
 
 
 
-
 # режимы открытия:
 # 'r'	открытие на чтение (является значением по умолчанию).
 # 'w'	открытие на запись, содержимое файла удаляется, если файла не существует, создается новый.
@@ -27,7 +26,8 @@
 # open_file_3 = open("i_file.txt" , "w")
 # print(open_file_3)
 # .write() = запись в файл
-# open_file_3.write("123456789")
+# s = "eee33"
+# open_file_3.write(s)
 
 # .close() - закрывает файл
 # open_file_3.close()
@@ -70,9 +70,40 @@
 
 
 # .split(s) - разделяет строку по строке s
-open_read_4 = open("i_file.txt" , "r").read()
-arr_open_read_4 = open_read_4.split("\n")
-print(arr_open_read_4)
+# open_read_4 = open("i_file.txt" , "r").read()
+# arr_open_read_4 = open_read_4.split("\n")
+# print(arr_open_read_4)
+
+
+
+
+
+
+
+
+# with open("C:/main_brain/фаилы/del_s.txt" , encoding="UTF-8") as file:
+#     print(file.read())
+
+
+
+# with open("./pack_class/l2_file.txt" , encoding="UTF-8") as file:
+#     print(file.read())
+
+
+
+# with open("../del_file_global.txt" , encoding="UTF-8") as file:
+#     print(file.read())
+
+
+
+# with open("../../del_file_global_2.txt" , encoding="UTF-8") as file:
+#     print(file.read())
+
+
+
+# with open("../../фаилы/del_s.txt" , encoding="UTF-8") as file:
+#     print(file.read())
+
 
 
 
