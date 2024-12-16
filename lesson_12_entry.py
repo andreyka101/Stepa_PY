@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import ttk
 
 
 window = Tk()
@@ -14,13 +15,13 @@ def fun():
 
 
 # ввод данных
-inp_ent = Entry()
+inp_ent = ttk.Entry()
 inp_ent.place(x=30 , y=30)
-lab_text = Label()
+lab_text = ttk.Label()
 lab_text.place(x=30 , y=60)
 
 
-but_1 = Button(text="run" , command=fun)
+but_1 = ttk.Button(text="run" , command=fun)
 but_1.place(x=30 , y=90)
 
 
