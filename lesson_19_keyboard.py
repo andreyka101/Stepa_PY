@@ -52,7 +52,7 @@ def fun_release(event):
     # text.config(text=event.keycode)
 
     # event.state - информация о дополнительно зажатых клавиш
-    # text.config(text=event.state)
+    text.config(text=event.state)
 
     # if(event.keycode == 87):
     #     window.config(bg="#238ecc")
