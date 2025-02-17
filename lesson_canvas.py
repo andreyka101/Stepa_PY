@@ -77,6 +77,7 @@ canV.create_arc(100 ,100 , 400, 400 , fill="#1dff4e" , start = 0 , extent = 100 
 
 
 
+canV.create_text(200 , 300 , text="wertyui\nowguwuegefe\nefefeff\,efee\nefefefef" , justify = "center" , font="Georgia 15" , fill="#21B297")
 
 
 
