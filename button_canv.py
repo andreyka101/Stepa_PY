@@ -11,6 +11,8 @@ canV = Canvas(height=500 , width=600 , bg="#FFFFFF")
 canV.place(x=0 , y=0)
 
 
+
+# список кнопок
 button_arr = [
     {
         "x1":30,
@@ -31,6 +33,9 @@ button_arr = [
         "text": "Hello World"
     },
 ]
+
+
+# рендерим кнопки и текст в них
 for obj_i in button_arr:
     canV.create_rectangle(obj_i["x1"],obj_i["y1"] , obj_i["x2"],obj_i["y2"] , fill=obj_i["background"] , width=0)
     canV.create_text((obj_i["x1"] + obj_i["x2"])/2 , (obj_i["y1"] + obj_i["y2"])/2 , text=obj_i["text"] , justify = "center" , font="Georgia 15" , fill="#000000")
@@ -40,7 +45,6 @@ for obj_i in button_arr:
 
 def motion(event):
     window.title(f"{event.x} {event.y}")
-    
     for obj_i in button_arr:
         if(obj_i["click"]):
             canV.create_rectangle(obj_i["x1"],obj_i["y1"] , obj_i["x2"],obj_i["y2"] , fill="#FF0B0B", width=0)
@@ -51,7 +55,6 @@ def motion(event):
         else:
             canV.create_rectangle(obj_i["x1"],obj_i["y1"] , obj_i["x2"],obj_i["y2"] , fill=obj_i["background"], width=0)
             canV.create_text((obj_i["x1"] + obj_i["x2"])/2 , (obj_i["y1"] + obj_i["y2"])/2 , text=obj_i["text"] , justify = "center" , font="Georgia 15" , fill="#000000")
-
 window.bind("<Motion>" , motion)
 
 
@@ -69,9 +72,6 @@ def fun_b1(event):
             canV.create_rectangle(obj_i["x1"],obj_i["y1"] , obj_i["x2"],obj_i["y2"] , fill=obj_i["background"], width=0)
             canV.create_text((obj_i["x1"] + obj_i["x2"])/2 , (obj_i["y1"] + obj_i["y2"])/2 , text=obj_i["text"] , justify = "center" , font="Georgia 15" , fill="#000000")
             obj_i["click"] = False
-        
-            
-
 window.bind("<Button-1>" , fun_b1)
 
 
