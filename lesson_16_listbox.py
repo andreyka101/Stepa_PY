@@ -28,6 +28,7 @@ inp_ent.place(x=30 , y=190)
 def fun_1():
     # list_box.curselection() - возвращает выбранный индекс 
     print(list_box.curselection())
+    .
     print(type(list_box.curselection()[0]))
     lab_text.config(text=list_box.curselection())
 but_1 = Button(text='get index' , command=fun_1)
