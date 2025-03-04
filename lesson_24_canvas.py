@@ -65,7 +65,7 @@ canV.create_rectangle(0 ,0 , 600, 500 , fill="#ffffff" ,width=0)
 
 
 # style ='arc' - рамка дуги
-canV.create_arc(100 ,100 , 400, 400 , fill="#1dff4e" , start = 0 , extent = 200 , style = "arc" , outline="#f8d143" , width=80)
+canV.create_arc(100 ,100 , 400, 400 , fill="#1dff4e" , start = 0 , extent = 100 , style = "arc" , outline="#f8d143" , width=80)
 
 
 # style ='pieslice' - дуга с углом (стоит по умолчанию)
@@ -73,14 +73,23 @@ canV.create_arc(100 ,100 , 400, 400 , fill="#1dff4e" , start = 0 , extent = 200 
 
 
 # style ='chord' - дуга без угла
-canV.create_arc(100 ,100 , 400, 400 , fill="#1dff4e" , start = 0 , extent = 100 , style = "chord")
+# canV.create_arc(100 ,100 , 400, 400 , fill="#1dff4e" , start = 0 , extent = 100 , style = "chord")
 
 
 
-canV.create_text(200 , 300 , text="wertyui\nowguwuegefe\nefefeff\,efee\nefefefef" , justify = "center" , font="Georgia 15" , fill="#21B297")
+# create_text - создать текст
+# fill = цвет
+# font = размер и шрифт
+# text = текст
+# justify = выравнивание текста
+# canV.create_text(200 , 300 , text="wertyui\nowguwuegefe\nefefeff\,efee\nefefefef" , justify = "center" , font="Georgia 15" , fill="#21B297")
 
 
 
+# создание картинки
+photo = PhotoImage(file="photo_2.png")
+canV.create_image(300 , 250 , image=photo)
+canV.create_bitmap(300 , 250)
 
 
 
