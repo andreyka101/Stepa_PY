@@ -65,7 +65,7 @@ canV.create_rectangle(0 ,0 , 600, 500 , fill="#ffffff" ,width=0)
 
 
 # style ='arc' - рамка дуги
-canV.create_arc(100 ,100 , 400, 400 , fill="#1dff4e" , start = 0 , extent = 100 , style = "arc" , outline="#f8d143" , width=80)
+canV.create_arc(100 ,100 , 400, 400 , fill="#1dff4e"  , start = 0 , extent = 100 , style = "arc" , outline="#f8d143" , width=80)
 
 
 # style ='pieslice' - дуга с углом (стоит по умолчанию)
