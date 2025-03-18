@@ -65,7 +65,7 @@ def fun_release(event):
     # if(event.keysym == "W" and event.state == 9):
     #     window.config(bg="#6b1385")
 
-# обработчик отжатия кл авиши клавиатуры
+# обработчик отжатие клавиши клавиатуры
 window.bind("<KeyRelease>" , fun_release)
 
 
