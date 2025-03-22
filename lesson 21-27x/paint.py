@@ -29,7 +29,7 @@ def fun(event):
         
         
         if(obj["x2"] == None):
-            obj["x1"] = event.y
+            obj["x1"] = event.x
             obj["y1"] = event.y
 
         obj["x2"] = event.x
