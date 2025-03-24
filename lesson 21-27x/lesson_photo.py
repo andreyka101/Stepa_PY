@@ -5,6 +5,7 @@ from tkinter import *
 
 
 
+
 window = Tk()
 window.title('cashier')
 window.geometry("600x500")
